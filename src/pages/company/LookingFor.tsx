@@ -1,22 +1,11 @@
 import { useState } from 'react';
-import { 
-  Briefcase, 
-  Building, 
-  Search, 
-  
-  Edit2,
-  Trash2, 
-  Power,
-  PowerOff,
-  Plus,
-} from 'lucide-react';
+import { Briefcase, Building, Search, Edit2, Trash2, Power, Plus } from 'lucide-react';
 
-export const Profile = () => {
+export const LookingFor = () => {
   const [records] = useState([
-    { id: 1, type: 'LTD', status: 'Active' },
-    { id: 2, type: 'PVT', status: 'Active' },
-    { id: 3, type: 'FZC', status: 'Active' },
-    { id: 4, type: 'LLC', status: 'Active' }
+    { id: 1, type: 'Off Shore', status: 'Active' },
+    { id: 2, type: 'Trading Finance', status: 'Active' },
+    { id: 3, type: 'SME Loan', status: 'Active' },
   ]);
   
   const [recordsPerPage, setRecordsPerPage] = useState(10);
@@ -27,13 +16,13 @@ export const Profile = () => {
       <div className="flex mb-8 gap-2">
         <button className="flex items-center bg-gray-700 text-white px-4 py-2 rounded-md text-sm">
           <Briefcase size={16} className="mr-2" />
-          MANAGE DEPARTMENT/SUB DEPARTMENT
+          MANAGE DEPARTMENT/ SUB DEPARTMENT
         </button>
-        <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-md text-sm">
+        <button className="flex items-center bg-gray-700 text-white px-4 py-2 rounded-md text-sm">
           <Building size={16} className="mr-2" />
           MANAGE COMPANY TYPE
         </button>
-        <button className="flex items-center bg-gray-700 text-white px-4 py-2 rounded-md text-sm">
+        <button className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-md text-sm">
           <Search size={16} className="mr-2" />
           MANAGE LOOKING FOR(SUB TYPE OF COMPANY)
         </button>
@@ -41,11 +30,11 @@ export const Profile = () => {
       
       {/* Header */}
       <div className="mb-6">
-        <h1 className="text-4xl font-bold mb-4">Manage Company Type</h1>
+        <h1 className="text-4xl font-bold mb-4">Manage Looking For</h1>
         <div className="flex items-center justify-between">
           <button className="text-blue-500 hover:text-blue-700 flex items-center">
             <Plus size={18} className="mr-1" />
-            Add Company Type
+            Add Looking For
           </button>
           <div className="flex items-center gap-2">
             <span className="text-gray-600">Records Per Page:</span>
@@ -69,10 +58,9 @@ export const Profile = () => {
         <input type="text" className="border rounded px-3 py-1 w-64" placeholder="Search..." />
         <select className="border rounded px-3 py-1">
           <option value="">Select</option>
-          <option value="LTD">LTD</option>
-          <option value="PVT">PVT</option>
-          <option value="FZC">FZC</option>
-          <option value="LLC">LLC</option>
+          <option value="Off Shore">Off Shore</option>
+          <option value="Trading Finance">Trading Finance</option>
+          <option value="SME Loan">SME Loan</option>
         </select>
         <select className="border rounded px-3 py-1">
           <option value="">Status</option>
@@ -128,7 +116,7 @@ export const Profile = () => {
           Activate
         </button>
         <button className="flex items-center border border-gray-300 bg-white hover:bg-gray-50 px-4 py-2 rounded">
-          <PowerOff size={16} className="mr-2 text-yellow-600" />
+          <Power size={16} className="mr-2 text-yellow-600" />
           Deactivate
         </button>
         <button className="flex items-center border border-gray-300 bg-white hover:bg-gray-50 px-4 py-2 rounded">
@@ -145,4 +133,4 @@ export const Profile = () => {
   );
 };
 
-export default Profile;
+export default LookingFor;

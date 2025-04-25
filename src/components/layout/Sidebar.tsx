@@ -36,18 +36,17 @@ const navItems: NavItemProps[] = [
     title: 'Manage Company Details',
     icon: <Building2 className="w-5 h-5" />,
     children: [
-      { title: 'Company Profile', path: '/company/profile' },
-      { title: 'Branch Offices', path: '/company/branches' },
-      { title: 'Documents', path: '/company/documents' },
+      { title: 'Manage Company', path: '/company/manage' },
+      { title: 'Manage looking for', path: '/company/lookingfor' },
     ],
   },
   {
     title: 'Manage Products and Services and Rate',
     icon: <ShoppingCart className="w-5 h-5" />,
     children: [
-      { title: 'Products List', path: '/products/list' },
-      { title: 'Services', path: '/products/services' },
-      { title: 'Categories', path: '/products/categories' },
+      { title: 'Manage Category', path: '/products/category' },
+      { title: 'Manage Product & Subproduct', path: '/products/subproduct' },
+      { title: 'Manage Faq', path: '/products/faq' },
     ],
   },
   {
