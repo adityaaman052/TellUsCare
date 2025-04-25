@@ -8,6 +8,23 @@ import LookingFor from './pages/company/LookingFor';
 import Category from './pages/products/Category';
 import SubProduct from './pages/products/Subproducts';
 import FAQ from './pages/products/Faq';
+import Prospects from './pages/marketing/Prospects';
+import Health from './pages/marketing/enquiry/insurance/Health';
+import Quotation from './pages/marketing/Quotation';
+import QuotRequest from './pages/marketing/QuotRequest';
+import AssignProviders from './pages/marketing/AssignProvider';
+import Motor from './pages/marketing/enquiry/insurance/Motor';
+import Cleaning from './pages/marketing/enquiry/facilityManagement/Cleaning';
+import PestControl from './pages/marketing/enquiry/facilityManagement/PestControl';
+import TechnicalService from './pages/marketing/enquiry/facilityManagement/TechnicalService';
+import CarTow from './pages/marketing/enquiry/vehicleServices/CarTow';
+import MotorService from './pages/marketing/enquiry/vehicleServices/MotorService';
+import CarWash from './pages/marketing/enquiry/vehicleServices/CarWash';
+import CarRepair from './pages/marketing/enquiry/vehicleServices/CarRepair';
+import Consumer from './pages/marketing/enquiry/joinPortal/Consumer';
+import Agent from './pages/marketing/enquiry/joinPortal/Agent';
+import SBP from './pages/marketing/enquiry/joinPortal/SBP';
+import Advertise from './pages/marketing/enquiry/joinPortal/Advertise';
 
 const App = () => {
   return (
@@ -25,6 +42,34 @@ const App = () => {
               <Route path="/products/category" element={<Category />} />
               <Route path="/products/subproduct" element={<SubProduct />} />
               <Route path="/products/faq" element={<FAQ />} />
+              <Route path="/marketing/prospects" element={<Prospects />} />
+              <Route path="/marketing/enquiry/insurance/health" element={<Health />} />
+              <Route path="/marketing/enquiry/insurance/motor" element={<Motor />} />
+              <Route path="/marketing/enquiry/facility/cleaning" element={<Cleaning />} />
+              <Route path="/marketing/enquiry/facility/pest-control" element={<PestControl />} />
+              <Route path="/marketing/enquiry/facility/technical" element={<TechnicalService />} />
+              <Route path="/marketing/enquiry/vehicle/car-tow" element={<CarTow />} />
+              <Route path="/marketing/enquiry/vehicle/motor-servicing" element={<MotorService />} />
+              <Route path="/marketing/enquiry/vehicle/car-wash" element={<CarWash />} />
+              <Route path="/marketing/enquiry/vehicle/car-repair" element={<CarRepair />} />
+              <Route path="/marketing/enquiry/join-portal/consumer" element={<Consumer />} />
+              <Route path="/marketing/enquiry/join-portal/agent" element={<Agent />} />
+              <Route path="/marketing/enquiry/join-portal/sbp" element={<SBP />} />
+              <Route path="/marketing/enquiry/join-portal/advertise" element={<Advertise />} />
+              <Route path="/marketing/enquiry/general/consumer" element={<Consumer />} />
+              <Route path="/marketing/enquiry/general/agent" element={<Agent />} />
+              <Route path="/marketing/enquiry/general/sbp" element={<Motor />} />
+              <Route path="/marketing/enquiry/general/advertise" element={<Motor />} />
+              <Route path="/marketing/enquiry/email-profile/consumer" element={<Motor />} />
+              <Route path="/marketing/enquiry/email-profile/agent" element={<Motor />} />
+              <Route path="/marketing/enquiry/email-profile/sbp" element={<Motor />} />
+              <Route path="/marketing/enquiry/email-profile/advertise" element={<Motor />} />
+
+
+
+              <Route path="/marketing/quote" element={<Quotation />} />
+              <Route path="/marketing/request" element={<QuotRequest />} />
+              <Route path="/marketing/request/assignProvider" element={<AssignProviders />} />
             </Routes>
           </main>
         </div>
