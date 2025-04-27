@@ -11,7 +11,6 @@ import {
   Eye,
   X
 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 // Define the type for our quotation records
 type QuotationRecord = {
@@ -84,7 +83,6 @@ export default function Quotation() {
     stateOfQuote: ""
   });
   
-  const navigate = useNavigate();
 
   // Filter quotations based on search term and filters
   useEffect(() => {

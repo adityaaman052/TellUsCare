@@ -135,7 +135,7 @@ const initialQuotations: QuotationRequest[] = [
 type ViewType = "customer" | "location";
 
 export default function QuotRequest() {
-  const [quotations, setQuotations] = useState<QuotationRequest[]>(initialQuotations);
+  const [quotations] = useState<QuotationRequest[]>(initialQuotations);
   const [filteredQuotations, setFilteredQuotations] = useState<QuotationRequest[]>(initialQuotations);
   const [searchTerm, setSearchTerm] = useState("");
   const [activeView, setActiveView] = useState<ViewType>("customer");
