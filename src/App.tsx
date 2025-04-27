@@ -25,6 +25,18 @@ import Consumer from './pages/marketing/enquiry/joinPortal/Consumer';
 import Agent from './pages/marketing/enquiry/joinPortal/Agent';
 import SBP from './pages/marketing/enquiry/joinPortal/SBP';
 import Advertise from './pages/marketing/enquiry/joinPortal/Advertise';
+import Interview from './pages/hr/Interview';
+import AddEmployees from './pages/hr/AddEmployees';
+import AddInBulk from './pages/hr/AddInBulk';
+import Attendance from './pages/hr/Attendance';
+import PettyCash from './pages/opAdminExpenses/PettyCash';
+import RentOfBranch from './pages/opAdminExpenses/RentofBranch';
+import UtilityPayment from './pages/opAdminExpenses/UtilityPayment';
+import Stationary from './pages/opAdminExpenses/Stationary';
+import CreatePlan from './pages/setting/CreatePlan';
+import AssignPlan from './pages/setting/AssignPlan';
+import Care from './pages/customer/Care';
+import Message from './pages/customer/Message';
 
 const App = () => {
   return (
@@ -70,6 +82,19 @@ const App = () => {
               <Route path="/marketing/quote" element={<Quotation />} />
               <Route path="/marketing/request" element={<QuotRequest />} />
               <Route path="/marketing/request/assignProvider" element={<AssignProviders />} />
+              <Route path="/hr/interview" element={<Interview />} />
+              <Route path="/hr/addEmployees" element={<AddEmployees />} />
+              <Route path="/hr/addInBulk" element={<AddInBulk />} />
+              <Route path="/hr/attendance" element={<Attendance />} />
+              <Route path="/expense/cash" element={<PettyCash />} />
+              <Route path="/expense/rent" element={<RentOfBranch />} />
+              <Route path="/expense/utilityPayment" element={<UtilityPayment />} />
+              <Route path="/expense/stationary" element={<Stationary />} />
+              <Route path="/customer/message" element={<Message />} />
+              <Route path="/customer/care" element={<Care />} />
+              <Route path="/customer/care" element={<Stationary />} />
+              <Route path="/setting/create" element={<CreatePlan />} />
+              <Route path="/setting/assign" element={<AssignPlan />} />
             </Routes>
           </main>
         </div>

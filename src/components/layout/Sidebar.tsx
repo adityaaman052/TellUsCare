@@ -227,6 +227,14 @@ const navItems: NavItemProps[] = [
       { title: 'Media', path: '/website/media' },
     ],
   },
+  {
+    title: 'Manage Customer',
+    icon: <Globe className="w-5 h-5" />,
+    children: [
+      { title: 'Customer Care', path: '/customer/care' },
+      { title: 'Send Message', path: '/customer/message' },
+    ],
+  },
 ];
 
 const NavItem = ({ item }: { item: NavItemProps }) => {
