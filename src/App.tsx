@@ -37,6 +37,18 @@ import CreatePlan from './pages/setting/CreatePlan';
 import AssignPlan from './pages/setting/AssignPlan';
 import Care from './pages/customer/Care';
 import Message from './pages/customer/Message';
+import OfferDiscount from './pages/manageOther/ViewRoleAccess';
+import ManageHealth from './pages/manageOther/ManageHealth';
+import ManageMotor from './pages/manageOther/ManageMotor';
+import ViewRoleAccess from './pages/manageOther/ViewRoleAccess';
+import CreateRoleAccess from './pages/manageOther/CreateRoleAccess';
+import ManageContacts from './pages/website/ManageContacts';
+import AboutUs from './pages/website/AboutUs';
+import StaticPages from './pages/website/StaticPages';
+import ManageTestimonials from './pages/website/ManageTestimonials';
+import ManageBlog from './pages/website/ManageBlog';
+import ManageMeta from './pages/website/ManageMeta';
+import ManageNewsletter from './pages/website/ManageNewsletter';
 
 const App = () => {
   return (
@@ -95,6 +107,18 @@ const App = () => {
               <Route path="/customer/care" element={<Stationary />} />
               <Route path="/setting/create" element={<CreatePlan />} />
               <Route path="/setting/assign" element={<AssignPlan />} />
+              <Route path="/manageOther/offer" element={<OfferDiscount />} />
+              <Route path="/manageOther/health-docs" element={<ManageHealth />} />
+              <Route path="/manageOther/motor-docs" element={<ManageMotor />} />
+              <Route path="/manageOther/roleAccess" element={<CreateRoleAccess />} />
+              <Route path="/manageOther/viewRoleAccess" element={<ViewRoleAccess />} />
+              <Route path="/website/manage-contacts" element={<ManageContacts />} />
+              <Route path="/website/static-pages" element={<StaticPages />} />
+              <Route path="/website/testimonials" element={<ManageTestimonials />} />
+              <Route path="/website/about-us" element={<AboutUs />} />
+              <Route path="/website/meta" element={<ManageMeta />} />
+              <Route path="/website/blog" element={<ManageBlog />} />
+              <Route path="/website/newsletter" element={<ManageNewsletter />} />
             </Routes>
           </main>
         </div>
