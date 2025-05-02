@@ -3,7 +3,7 @@ import { Search, Bell, User } from 'lucide-react';
 
 export const Navbar = () => {
   return (
-    <div className="h-16 bg-blue-600 flex items-center justify-between px-4">
+    <div className="h-16 bg-blue-600 flex items-center justify-between px-16">
       <div className="flex-1 max-w-xl">
         <div className="relative">
           <input

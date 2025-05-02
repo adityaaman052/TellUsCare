@@ -343,11 +343,13 @@ export const Sidebar = () => {
     <div className="relative flex">
       {/* Toggle Button */}
       <button
-        onClick={() => setSidebarVisible(!sidebarVisible)}
-        className="fixed z-20 p-2 bg-white border border-gray-200 rounded-md shadow-md top-4 left-4 md:left-4"
-        aria-label="Toggle Sidebar"
+      onClick={() => setSidebarVisible(!sidebarVisible)}
+      className={`fixed z-20 p-2 bg-white border border-gray-200 rounded-md shadow-md top-3 ${
+        sidebarVisible ? "left-52 md:left-04" : "left-2"
+      }`}
+      aria-label="Toggle Sidebar"
       >
-        <Menu className="w-6 h-6" />
+      <Menu className="w-6 h-6" />
       </button>
 
       {/* Sidebar */}
